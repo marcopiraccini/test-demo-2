@@ -1,7 +1,16 @@
 {
   "server": {
     "hostname": "127.0.0.1",
-    "port": 3042
+    "port": 3042,
+    "cors": {
+      "origin": "https://platformatic.cloud",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
   },
   "core": {
     "connectionString": "sqlite://db.sqlite",
