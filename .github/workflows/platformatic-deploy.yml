@@ -5,6 +5,9 @@ on:
       - 'docs/**'
       - '**.md'
 
+env:
+  DATABASE_URL: sqlite://./db.sqlite 
+  PLT_SERVER_LOGGER_LEVEL: info 
 
 jobs:
   build_and_deploy:
