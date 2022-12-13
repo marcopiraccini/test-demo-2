@@ -2,17 +2,12 @@
   "server": {
     "hostname": "127.0.0.1",
     "port": 3042,
-    "cors": {
-      "origin": "https://platformatic.cloud",
-      "methods": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
     }
   },
   "core": {
+    "connectionString": "{DATABASE_URL}",
     "connectionString": "sqlite://db.sqlite",
     "graphql": true,
     "ignore": {
