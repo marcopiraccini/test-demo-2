@@ -1,9 +1,13 @@
 {
   "server": {
     "hostname": "127.0.0.1",
-    "port": 3042
+    "port": 3042,
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    }
   },
   "core": {
+    "connectionString": "{DATABASE_URL}",
     "connectionString": "sqlite://db.sqlite",
     "graphql": true,
     "ignore": {
